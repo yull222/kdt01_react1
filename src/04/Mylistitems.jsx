@@ -12,23 +12,22 @@ export default function Mylistitems({ dn1, dn2, dn3 ,show}) {
     };
     return (
         <div className='w-full h-full flex border border-red-200 pt-0.5'>
-            <div className='w-1/4 '>
+
+            <div className='w-1/5  '>
                 <img src={dn2} alt="dn1" />
             </div>
-            <div className='w-3/4 ml-10' >
-                <h1 className="h-1/4 text-2xl font-bold flex justify-start items-start pt-5">
+
+
+            <div className='w-3/5 ml-5' >
+                <h1 className="h-1/4 text-2xl font-bold flex justify-start items-start pt-1">
                     {dn1}
                 </h1>
                 <p className="h-2/4 text-lg pt-2">
                     {dn3}
                 </p>
-                
-                
                <div className="h-1/4 text-xl font-bold flex justify-end items-end px-5 py-8">
                        {show && <span onClick={handle} className="cursor-pointer"> ❤️  좋아요 {cnt}</span>}
                         </div>
-                        
-
             </div>
         </div>
     )
