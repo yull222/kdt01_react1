@@ -1,12 +1,6 @@
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-// import Hello from "./01/Hello"
-// import MyClock from './02/MyClock';
-// import MyDiv1 from './03/MyDiv1';
-//import FoodCard from './06/FoodCard';
-import Foodmain from './06/Foodmain';
-//import Mylist from './04/Mylist';
-//import { FaHome } from "react-icons/fa";
+
+import Mclock from "./02/Mclock"
+
 function App() {
   return (
     <div className="w-full xl:w-8/10 h-screen mx-auto 
@@ -26,7 +20,7 @@ function App() {
                       flex flex-col justify-start items-center
                       overflow-y-auto">
                    
-         <Foodmain />
+         <Mclock />
         
       </main>
       <footer className="w-full min-h-20 bg-red-200

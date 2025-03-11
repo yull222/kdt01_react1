@@ -27,7 +27,7 @@ export default function FoodCard({obj}) {
 
     //{자료구조이름[전달파라미터["키"]]}
     return (
-        <div className='w-full h-full flex justify-start items-start border border-red-200 pt-0.5'>
+        <div className='w-full h-full flex justify-start items-start border  border-red-200 pt-0.5'>
             
             <div className='w-2/6 '>
             

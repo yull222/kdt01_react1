@@ -1,5 +1,6 @@
 import MClockImage from "./MClockImage"
 import MclockTime from "./MclockTime"
+import  "./Mclock1.css"
 
 function Mclock(){
     return(

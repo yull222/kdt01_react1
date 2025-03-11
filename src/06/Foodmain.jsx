@@ -18,7 +18,12 @@ export default function Foodmain() {
 
         
 
-        let tm=fooddata.filter(item=>item["운영주체 분류"].replaceAll(' ','')==c);
+        let tm=fooddata.filter(item=>item["운영주체 분류"].replaceAll(' ','')==c)
+                       .map(item => <FoodCard
+                                          key={(item["사업장명"])}
+                                          obj={item}
+                                           /> );
+        setTags(tm);  
         console.log("handleCategory",tm);
     }
 
