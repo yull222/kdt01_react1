@@ -1,5 +1,4 @@
-
-import Mclock from "./02/Mclock"
+import BoxOffice from "./09/BoxOffice"
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
                       flex flex-col justify-start items-center
                       overflow-y-auto">
                    
-         <Mclock />
+         <BoxOffice/>
         
       </main>
       <footer className="w-full min-h-20 bg-red-200
