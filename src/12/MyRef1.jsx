@@ -17,8 +17,6 @@ export default function MyRef1() {
     const handleCal=(e)=>{
         e.preventDefault;
 
-        
-
     }
 
   return (
@@ -57,9 +55,18 @@ export default function MyRef1() {
         
         <input type="number" id="txt3" 
         ref={result}
+        switch () {
+            case "+" value:
+                
+                break;
+        
+            default:
+                break;
+        }
         className=" bg-amber-100 border border-amber-300
-        text-black text-sm rounded-lg
+        text-black text-sm rounded-lg read-only:
         "></input>
+
 
    
     </form>           
