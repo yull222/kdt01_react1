@@ -1,5 +1,4 @@
-import BoxOffice from "./09/BoxOffice"
-
+import MyRef1 from "./12/MyRef1"
 function App() {
   return (
     <div className="w-full xl:w-8/10 h-screen mx-auto 
@@ -19,7 +18,7 @@ function App() {
                       flex flex-col justify-start items-center
                       overflow-y-auto">
                    
-         <BoxOffice/>
+        <MyRef1 />
         
       </main>
       <footer className="w-full min-h-20 bg-red-200
