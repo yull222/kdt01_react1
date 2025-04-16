@@ -1,17 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import {Link}from "react-router-dom"
-import Hello from "./01/Hello" 
-import Lotto from "./05/Lotto"
+
+import Hello from "./01/Hello"
+import Foodmain from "./06/Foodmain"
+import BoxOffice from "./09/BoxOffice"
 import Gallery from "./13/Gallery"
-import Festival from "./14/Festival"  
+import Festival from "./14/Festival"
+//import RouterMain from "./15/RouterMain"
+import MyEffect from "./08/MyEffect"
+import Gallery from "./13/Gallery"
 import MyRef1 from "./12/MyRef1"
 import Traffic from "./10/Traffic"
-import BoxOffice from "./09/BoxOffice" 
-
+import BoxOffice from "./09/BoxOffice"
+import Festival from "./14/Festival"
+import MyEffect from "./08/MyEffect"
 
 
 function App() {
-  return ( 
+  return (
     <BrowserRouter>
     <div className="w-full xl:w-8/10 h-screen mx-auto 
                     flex flex-col">
@@ -23,39 +29,7 @@ function App() {
           KDT
 
         </div>
-        
-        <ul className="w-full h-16 flex justify-center items-center">
-            
-            
-
-            <li className="p-2 border rounded-lg border-b-black 
-            hover:bg-red-300 hover:text-amber-50 mx-4 font-bold">
-                <Link to="/Gallery" >Gallery</Link>
-
-            </li>
-
-            <li className="p-2 border rounded-lg border-b-black 
-            hover:bg-red-300 hover:text-amber-50 mx-4 font-bold">
-                <Link to="/MyRef1">MyRef1</Link>
-
-            </li>
-
-            <li className="p-2 border rounded-lg border-b-black 
-            hover:bg-red-300 hover:text-amber-50 mx-4 font-bold">
-                <Link to="/Traffic">Traffic</Link>
-
-            </li>
-            <li className="p-2 border rounded-lg border-b-black 
-            hover:bg-red-300 hover:text-amber-50 mx-4 font-bold">
-                <Link to="/Lotto">Lotto</Link>
-
-            </li>
-            <li className="p-2 border rounded-lg border-b-black 
-            hover:bg-red-300 hover:text-amber-50 mx-4 font-bold">
-                <Link to="/BoxOffice">BoxOffice</Link>
-
-            </li>
-    </ul>
+      
       </header>
     
       <main className="w-full flex-grow
@@ -64,14 +38,14 @@ function App() {
                       overflow-y-auto">
 
                    
-      <Routes> 
+      <Routes>
+        <Route path="/myeffect" element={<MyEffect  />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/MyRef1" element={<MyRef1 />} />
         <Route path="/Traffic" element={<Traffic />} />
-     
+        <Route path="/BoxOffice" element={<BoxOffice />} />
         <Route path="/Festival" element={<Festival />} />
         <Route path="/Hello" element={<Hello />} />
-        <Route path="/BoxOffice" element={<BoxOffice />} />
 
       </Routes>
 
